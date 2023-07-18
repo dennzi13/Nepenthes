@@ -1,0 +1,199 @@
+＊初期化
+＄喋り間隔	１８０秒
+＄喋り間隔誤差	１０％
+＄会話時サーフェス戻し	有効
+＄デフォルトサーフェス0	999
+＄デフォルトサーフェス1	999
+＄スコープ切り換え時	\n[half]
+＄ユーザ名	ユーザ
+＄ユーザアカウント名	ユーザ
+＄自動挿入ウェイトタイプ	無効
+＄自動挿入ウェイトの倍率	１００％
+＄なでられ持続秒数	２
+＄なでられ反応回数	６０
+＄トーク中のなでられ反応	無効
+＄なでられ時実行イベント	なでられ時の反応
+＄フェーズ	０
+＄ムード	０
+＄最大ムード	１０
+＄ムード閾値	６
+＄会話回数	０
+＄会話回数閾値	３
+＄スカート状態	０
+＄胸はだけ状態	０
+＄眼鏡着用状態	１
+＄マスク着用状態	１
+＄xxx指入れフラグ	０
+＄射精ゲージ	０
+＄射精閾値	１００
+＄精液ストック	５
+＄性経験	０
+＄挿入中	０
+＄中出し回数	０
+＄ツールチップ表示	１
+＄表示中各種設定ページ	１
+＄折り畳み	０
+＄射精反応ウエイト	\w9\w8
+＄射精反応ウエイトON	０
+＄チンポの大きさ	１
+＄射精までの時間	１
+＄行動	
+＄行動繰り返し機能フラグ	１
+＄行動繰り返しキー	space
+＄行動繰り返しキーコンフィグ	０
+＄行動内容の表示	２
+＄呟きデータ1	０
+＄呟きデータ2	０
+＄呟きデータ3	０
+＄呟きデータ4	０
+＄呟きデータ5	０
+＄呟きデータ6	０
+＄呟きデータ7	０
+＄呟きデータ8	０
+＄呟きデータ9	０
+＄呟きデータ10	０
+＄呟きデータ11	０
+＄呟きデータ12	０
+＄呟きデータ13	０
+＄呟きデータ14	０
+＄呟きデータ15	０
+＄呟きデータ16	０
+＄呟きデータ17	０
+＄呟きデータ18	０
+＄呟きデータ19	０
+＄呟きデータ20	０
+＄呟きデータ21	０
+＄呟きデータ22	０
+＄呟きデータ23	０
+＄呟きデータ24	０
+＄呟きデータ25	０
+＄呟きデータ26	０
+＄呟きデータ27	０
+＄呟きデータ28	０
+＄呟きデータ29	０
+＄呟きデータ30	０
+＄呟きデータ31	０
+＄呟きデータ32	０
+＄呟きデータ33	０
+＄呟きデータ34	０
+＄呟きデータ35	０
+＄呟きデータ36	０
+＄呟きデータ37	０
+＄呟きデータ38	０
+＄呟きデータ39	０
+＄呟きデータ40	０
+＄呟きデータ41	０
+＄呟きデータ42	０
+＄呟きデータ43	０
+＄呟きデータ44	０
+＄呟きデータ45	０
+＄呟きデータ46	０
+＄呟きデータ47	０
+＄呟きデータ48	０
+＄呟きデータ49	０
+＄呟きデータ50	０
+＄呟きデータ51	０
+＄呟きデータ52	０
+＄呟きデータ53	０
+＄呟きデータ54	０
+＄呟きデータ55	０
+＄呟きデータ56	０
+＄呟きデータ57	０
+＄呟きデータ58	０
+＄呟きデータ59	０
+＄呟きデータ60	０
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+＃里々でははじめからいくつかのスクリプトの追加作業を自動で行ってくれています。
+＃
+＃＄会話時サーフェス戻し	有効
+＃は、会話を始めるときに、デフォルトサーフェス（初期設定なら０）を表示するという設定です。
+＃＄スコープ切り換え時	\n[half]
+＃は、相方⇒メイン　メイン⇒相方　としゃべるキャラクタが変わるときに、半行改行するという設定です。
+
+＃　SAORIを使わない場合、ここから下を消去してしまって構いません。
+＃　SAORIフォルダも不要です。
+
+
+
+＃
+＃　各栞共通プラグイン規格『SAORI』用の定義。
+＃　使うdllは予めここで列挙してください。
+＃
+＃　カンマ区切りで、左から順に
+＃　　・辞書からの呼び出すときの名前。dll名そのままでも構いません。
+＃　　・プラグインdllの相対パス。
+＃　　・自動設定される引数。これは省略可。
+＃
+
+
+＠SAORI
+fill_desktop,saori/fill_desktop.dll
+fill_red,saori/fill_desktop.dll,255,0,0
+calc,saori/ssu.dll,calc
+calc_float,saori/ssu.dll,calc_float
+if,saori/ssu.dll,if
+unless,saori/ssu.dll,unless
+nswitch,saori/ssu.dll,nswitch
+switch,saori/ssu.dll,switch
+substr,saori/ssu.dll,substr
+split,saori/ssu.dll,split
+replace,saori/ssu.dll,replace
+replace_first,saori/ssu.dll,replace_first
+erase,saori/ssu.dll,erase
+erase_first,saori/ssu.dll,erase_first
+count,saori/ssu.dll,count
+compare,saori/ssu.dll,compare
+compare_head,saori/ssu.dll,compare_head
+compare_tail,saori/ssu.dll,compare_tail
+length,saori/ssu.dll,length
+zen2han,saori/ssu.dll,zen2han
+han2zen,saori/ssu.dll,han2zen
+hira2kata,saori/ssu.dll,hira2kata
+kata2hira,saori/ssu.dll,kata2hira
+sprintf,saori/ssu.dll,sprintf
+iflist,saori/ssu.dll,iflist
+is_empty,saori/ssu.dll,is_empty
+is_digit,saori/ssu.dll,is_digit
+is_alpha,saori/ssu.dll,is_alpha
+choice,saori/ssu.dll,choice
+join,saori/ssu.dll,join
+reverse,saori/ssu.dll,reverse
+at,saori/ssu.dll,at
+lsimg,saori/ssu.dll,lsimg
+mkdir,saori/ssu.dll,mkdir
+aya,saori/yaya.dll
