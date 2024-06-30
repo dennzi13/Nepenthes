@@ -1,3 +1,4 @@
+
 ＊初期化
 ＄喋り間隔	１８０秒
 ＄喋り間隔誤差	１０％
@@ -7,6 +8,7 @@
 ＄スコープ切り換え時	\n[half]
 ＄ユーザ名	ユーザ
 ＄ユーザアカウント名	ユーザ
+＄前回ユーザアカウント名	NULL
 ＄自動挿入ウェイトタイプ	無効
 ＄自動挿入ウェイトの倍率	１００％
 ＄なでられ持続秒数	２
@@ -102,6 +104,7 @@
 ＄呟きデータ58	０
 ＄呟きデータ59	０
 ＄呟きデータ60	０
+＃顔見知りモード	０
 
 
 
@@ -162,7 +165,7 @@
 
 
 ＠SAORI
-fill_desktop,saori/fill_desktop.dll
+fill_desktop,saori/fill_desktop.dll,
 fill_red,saori/fill_desktop.dll,255,0,0
 calc,saori/ssu.dll,calc
 calc_float,saori/ssu.dll,calc_float
@@ -196,4 +199,4 @@ reverse,saori/ssu.dll,reverse
 at,saori/ssu.dll,at
 lsimg,saori/ssu.dll,lsimg
 mkdir,saori/ssu.dll,mkdir
-aya,saori/yaya.dll
+aya,saori/yaya.dll,

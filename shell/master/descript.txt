@@ -3,7 +3,7 @@ craftman,
 id,scribble
 name,master
 type,shell
-craftmanw,
+craftmanw,“d¥
 craftmanurl,
 
 

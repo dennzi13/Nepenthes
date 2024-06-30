@@ -1,9 +1,9 @@
 charset,Shift_JIS
 name,ユー・ベイト
 type,ghost
-craftman,
-craftmanw,
-craftmanurl,
+craftman,dennzi
+craftmanw,電磁
+craftmanurl,http://denmemo31.blog.fc2.com/
 readme,readme.txt
 sakura.name,メリリリ
 sakura.seriko.defaultsurface,0

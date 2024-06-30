@@ -295,7 +295,29 @@ animation1004.interval,runonce
 animation1004.pattern0,overlay,100400,0,0,0
 }
 
+surface0025
+{
+animation1001.interval,runonce
+animation1001.pattern0,overlay,100100,0,0,0
+animation1002.interval,runonce
+animation1002.pattern0,overlay,100201,0,0,0
+animation1003.interval,runonce
+animation1003.pattern0,overlay,100307,0,0,0
+animation1004.interval,runonce
+animation1004.pattern0,overlay,100400,0,0,0
+}
 
+surface0026
+{
+animation1001.interval,runonce
+animation1001.pattern0,overlay,100101,0,0,0
+animation1002.interval,runonce
+animation1002.pattern0,overlay,100201,0,0,0
+animation1003.interval,runonce
+animation1003.pattern0,overlay,100307,0,0,0
+animation1004.interval,runonce
+animation1004.pattern0,overlay,100400,0,0,0
+}
 
 
 
@@ -717,10 +739,34 @@ animation1004.interval,runonce
 animation1004.pattern0,overlay,100401,0,0,0
 }
 
+surface0075
+{
+animation1001.interval,runonce
+animation1001.pattern0,overlay,100100,0,0,0
+animation1002.interval,runonce
+animation1002.pattern0,overlay,100201,0,0,0
+animation1003.interval,runonce
+animation1003.pattern0,overlay,100307,0,0,0
+animation1004.interval,runonce
+animation1004.pattern0,overlay,100401,0,0,0
+}
+
+surface0076
+{
+animation1001.interval,runonce
+animation1001.pattern0,overlay,100101,0,0,0
+animation1002.interval,runonce
+animation1002.pattern0,overlay,100201,0,0,0
+animation1003.interval,runonce
+animation1003.pattern0,overlay,100307,0,0,0
+animation1004.interval,runonce
+animation1004.pattern0,overlay,100401,0,0,0
+}
+
 surface.append0-9,11-99
 {
 //satolist.palette.offset,226,106
-//satolist.palette.expand,0.85
+//satolist.palette.expand,0.8
 //satolist.surface.default,10,0
 //satolist.surface.default,1001,0
 //satolist.surface.default,1002,0

@@ -3,6 +3,7 @@ ghost/master/satori_savedata.txt,nonar
 
 ghost/master/satori_savebackup.txt,noupdate
 ghost/master/satori_savedata.txt,noupdate
+shell/master/profile/,nonar,noupdate
 
 .gitignore,nonar,noupdate
 .gitattributes,nonar,noupdate

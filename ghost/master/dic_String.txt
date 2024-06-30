@@ -36,7 +36,7 @@ Read me(&R)
 ＃消滅指示を表示するかどうか。1で表示、0で非表示（色が変わり選択できなくなる）です。
 
 ＠homeurl
-https://raw.githubusercontent.com/dennzi13/LoveReflex/master/
+https://raw.githubusercontent.com/dennzi13/Nepenthes/master/
 
 ＃ネットワーク更新時にアクセスするアドレス。
 ＃フォルダ名を記述、最後に/をつけてください。例のような形になります。
@@ -66,6 +66,11 @@ https://raw.githubusercontent.com/dennzi13/LoveReflex/master/
 ＃http://～ 
 ＃バナー（あれば） 
 
+
+
+＊sakura.recommendsites
+超電磁力工房
+http://denmemo31.blog.fc2.com/
 
 
 ＃＊sakura.portalsites
@@ -172,11 +177,3 @@ http://nar.jpn.org/unyu/
 ＃　φは直後の文字の「特殊性」を無効化します。
 ＃　ここでは「…」がそのままでは「…\w3」に置き換えられてしまうのを防いでます。
 ＃　他にも置き換えたくないカッコ　（　などに使えます。
-
-
-
-＠tooltip
-（when、（ツールチップ表示）＝＝１、（call、（Ｒ３）（Ｒ４）ツールチップ））
-
-＠balloon_tooltip
-（nop,（split,（Ｒ１）,（バイト値,1）））（call，（Ｓ０）.balloon_tooltip）

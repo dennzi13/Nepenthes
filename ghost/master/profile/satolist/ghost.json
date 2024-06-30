@@ -5,5 +5,7 @@
   "LastUploadUseFiles": false,
   "LastBootExecutePath": null,
   "SurfacePreviewShellDirectory": "master",
+  "IsRuntimeBasedSurfaceViewerEnabled": true,
+  "DefaultSurfacePaletteOffset": {},
   "DictionarySettings": {}
 }

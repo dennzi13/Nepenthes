@@ -295,7 +295,29 @@ animation1004.interval,runonce
 animation1004.pattern0,overlay,200400,0,0,0
 }
 
+surface0125
+{
+animation1001.interval,runonce
+animation1001.pattern0,overlay,200100,0,0,0
+animation1002.interval,runonce
+animation1002.pattern0,overlay,200201,0,0,0
+animation1003.interval,runonce
+animation1003.pattern0,overlay,200307,0,0,0
+animation1004.interval,runonce
+animation1004.pattern0,overlay,200400,0,0,0
+}
 
+surface0126
+{
+animation1001.interval,runonce
+animation1001.pattern0,overlay,200101,0,0,0
+animation1002.interval,runonce
+animation1002.pattern0,overlay,200201,0,0,0
+animation1003.interval,runonce
+animation1003.pattern0,overlay,200307,0,0,0
+animation1004.interval,runonce
+animation1004.pattern0,overlay,200400,0,0,0
+}
 
 
 
@@ -717,7 +739,29 @@ animation1004.interval,runonce
 animation1004.pattern0,overlay,200401,0,0,0
 }
 
+surface0175
+{
+animation1001.interval,runonce
+animation1001.pattern0,overlay,200100,0,0,0
+animation1002.interval,runonce
+animation1002.pattern0,overlay,200201,0,0,0
+animation1003.interval,runonce
+animation1003.pattern0,overlay,200307,0,0,0
+animation1004.interval,runonce
+animation1004.pattern0,overlay,200401,0,0,0
+}
 
+surface0176
+{
+animation1001.interval,runonce
+animation1001.pattern0,overlay,200101,0,0,0
+animation1002.interval,runonce
+animation1002.pattern0,overlay,200201,0,0,0
+animation1003.interval,runonce
+animation1003.pattern0,overlay,200307,0,0,0
+animation1004.interval,runonce
+animation1004.pattern0,overlay,200401,0,0,0
+}
 
 
 
