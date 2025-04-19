@@ -337,6 +337,38 @@
 ＃＜WEB拍手＞　---------------------------------------------
 
 
+＃＊WEB拍手
+＃：\_qWEB拍手を送信する機能ですφ。任意でコメントを付けて送信することができますφ。
+＃コメント内容はバグ報告φ、要望などご自由に入力くださいφ。要望については今後の更新の際に参考にさせていただくかもしれませんφ。
+＃
+＃\q[WEB拍手を送信,WEB拍手を送信]
+＃\q[コメント付きでWEB拍手を送信,コメント付きでWEB拍手を送信]
+＃\q[戻る,0つつかれ]\_q
+＃
+＃＊WEB拍手を送信
+＃：\_q\![execute,http-post,http://clap.webclap.com/clap.php?id=dennzi,--param=message_body="",--async=WebClap,--timeout=2]送信しましたφ。\_q
+＃
+＃\q[戻る,0つつかれ]\_q
+＃
+＃＊コメント付きでWEB拍手を送信
+＃：\_qコメント内容を入力してくださいφ。
+＃※InputBoxを閉じることで送信を中断することが来ますφ。\_q
+＃\![open,inputbox,WEB拍手内容]
+＃
+＃
+＃＊WEB拍手内容を教えてもらった
+＃：\_q（WEB拍手内容）
+＃
+＃上記内容を送信しますφ。
+＃
+＃\q[送信する,コメ付き拍手送信]
+＃\q[送信しない,0つつかれ]\_q
+＃
+＃＊コメ付き拍手送信
+＃：\_q\![execute,http-post,http://clap.webclap.com/clap.php?id=dennzi,--param=message_body="オフパコ_拍コメ：「（WEB拍手内容）」",--async=WebClap,--timeout=2]送信しましたφ。
+＃
+＃\q[戻る,0つつかれ]\_q
+
 ＊WEB拍手
 ：\_qWEB拍手を送信する機能ですφ。任意でコメントを付けて送信することができますφ。
 コメント内容はバグ報告φ、要望などご自由に入力くださいφ。要望については今後の更新の際に参考にさせていただくかもしれませんφ。
@@ -345,18 +377,28 @@
 \q[コメント付きでWEB拍手を送信,コメント付きでWEB拍手を送信]
 \q[戻る,0つつかれ]\_q
 
-＊WEB拍手を送信
-：\_q\![execute,http-post,http://clap.webclap.com/clap.php?id=dennzi,--param=message_body="",--async=WebClap,--timeout=2]送信しましたφ。\_q
 
-\q[戻る,0つつかれ]\_q
+
+＃v10使用
+
+＊WEB拍手を送信
+＄WCM_URL	https://script.google.com/macros/s/AKfycbynHkiPNN3I-TTRu0ts7Gx6YMv0VdS6pgZp4oLANd_fgyn2BaR06AMAzevAX7BDKdIjMA/exec
+＄送信元	ユー・ベイト
+＄送信内容	コメなし拍手
+＄メモ	拍手
+\![execute,http-POST,（WCM_URL）,--param=message_body="（送信元）;（送信内容）;（メモ）",--async=OnWebClapModoki,--timeout=60]
+\_q送信中\_q
+
 
 ＊コメント付きでWEB拍手を送信
 ：\_qコメント内容を入力してくださいφ。
 ※InputBoxを閉じることで送信を中断することが来ますφ。\_q
-\![open,inputbox,WEB拍手内容]
+\![open,inputbox,WEB拍手内容,--timeout=-1]
+
 
 
 ＊WEB拍手内容を教えてもらった
+＄送信内容保存	（WEB拍手内容）
 ：\_q（WEB拍手内容）
 
 上記内容を送信しますφ。
@@ -364,11 +406,25 @@
 \q[送信する,コメ付き拍手送信]
 \q[送信しない,0つつかれ]\_q
 
+
 ＊コメ付き拍手送信
-：\_q\![execute,http-post,http://clap.webclap.com/clap.php?id=dennzi,--param=message_body="オフパコ_拍コメ：「（WEB拍手内容）」",--async=WebClap,--timeout=2]送信しましたφ。
+＄WCM_URL	https://script.google.com/macros/s/AKfycbyhqOrrVar9V7nJQSR2vN-DhMsfeEw1IUnNJXGwlYJnCJMy3GbsRXaLvMAYaWrCEoBE3g/exec
+＄送信元	ユー・ベイト
+＄送信内容	（送信内容保存）
+＄メモ	拍手
+\![execute,http-POST,（WCM_URL）,--param=message_body="（送信元）;（送信内容）;（メモ）",--async=OnWebClapModoki,--timeout=60]
+：\_q送信中\_q
+
+＊OnWebClapModoki
+：\_q送信しましたφ。
 
 \q[戻る,0つつかれ]\_q
 
+＊OnWebClapModokiFailure
+：\_q送信に失敗しましたφ。
+エラーコード:（Ｒ４）
+
+\q[戻る,0つつかれ]\_q
 
 
 ＃＜抜いたボタン＞　---------------------------------------------
@@ -383,8 +439,18 @@
 \q[送信しない,0つつかれ]\_q
 
 
-＊抜いた送信
-＄抜いたコメント	抜いた!（zen2han、（現在時）（現在分）（現在秒））
-：\_q\![execute,http-post,http://clap.webclap.com/clap.php?id=dennzi,--param=message_body="オフパコ抜いた：「（抜いたコメント）」",--async=WebClap,--timeout=2]送信しましたφ。
+＃＊抜いた送信
+＃＄抜いたコメント	抜いた!（zen2han、（現在時）（現在分）（現在秒））
+＃：\_q\![execute,http-post,http://clap.webclap.com/clap.php?id=dennzi,--param=message_body="オフパコ抜いた：「（抜いたコメント）」",--async=WebClap,--timeout=2]送信しましたφ。
+＃
+＃\q[戻る,0つつかれ]\_q
 
-\q[戻る,0つつかれ]\_q
+
+＊抜いた送信
+＄WCM_URL	https://script.google.com/macros/s/AKfycbynHkiPNN3I-TTRu0ts7Gx6YMv0VdS6pgZp4oLANd_fgyn2BaR06AMAzevAX7BDKdIjMA/exec
+＄送信元	ユー・ベイト
+＄送信内容	抜いた!
+＄メモ	抜いた
+\![execute,http-POST,（WCM_URL）,--param=message_body="（送信元）;（送信内容）;（メモ）",--async=OnWebClapModoki,--timeout=60]
+：\_q送信中\_q
+
